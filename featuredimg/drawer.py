@@ -1,4 +1,5 @@
 from PIL import Image, ImageDraw, ImageFont
+import os
 
 # 画像全体に対するメッセージ描画可能エリアの比率
 MAX_RATIO = 0.8
@@ -8,7 +9,7 @@ FONT_MAX_SIZE = 256
 FONT_MIN_SIZE = 24
 
 # フォントの格納先のパスは実行環境に合わせて変更する
-FONT_NAME = '/System/Library/Fonts/ヒラギノ角ゴシック W8.ttc'
+FONT_NAME = os.path.dirname(__file__) + '/data/ipaexg.ttf'
 FONT_COLOR_WHITE = (255, 255, 255, 0)
 
 # アウトプット関連の定数
